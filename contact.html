@@ -28,7 +28,7 @@
     nav a:hover{background:var(--muted)}
     nav a.active{background:var(--text);color:#fff}
     .actions{display:flex;gap:12px;align-items:center}
-    .icon-btn{background:transparent;border:1px solid transparent;padding:8px;border-radius:8px;cursor:pointer;font-weight:600;font-size:18px}
+    .icon-btn{background:transparent;border:1px solid transparent;padding:8px;border-radius:8px;cursor:pointer;}
 
     /* Sidebar */
     .sidebar {height:100%;width:250px;position:fixed;top:0;left:-250px;background:#111;overflow-x:hidden;transition:left 0.4s ease;padding-top:60px;z-index:1200}
@@ -66,13 +66,12 @@
     <header>
       <div class="nav">
         <div style="display:flex;gap:8px;align-items:center">
-          <button class="icon-btn" id="menuToggle">☰</button>
+          <button class="icon-btn" id="menuToggle">☰ MENU </button>
           <div class="brand">KEN MADUEKE</div>
         </div>
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="contact.html" class="active">Contact</a></li>
           </ul>
@@ -87,7 +86,6 @@
     <div id="sidebar" class="sidebar">
       <span class="close-sidebar" id="closeSidebar">×</span>
       <a href="index.html">Home</a>
-      <a href="shop.html">Shop</a>
       <a href="about.html">About Us</a>
       <a href="contact.html" class="active">Contact</a>
     </div>

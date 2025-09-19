@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact Us – KEN MADUEKE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --max-w:1200px;--bg:#fff;--text:#0b0b0b;--sub:#6d6d6d;--accent:#000;--radius:12px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter,system-ui,Roboto,Arial;color:var(--text);background:var(--bg);}
+    .wrap{max-width:var(--max-w);margin:0 auto;padding:24px;}
+    header{position:sticky;top:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(6px);z-index:60;border-bottom:1px solid #eee;}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0;flex-wrap:wrap;}
+    .brand{font-family:'Playfair Display',serif;font-size:20px;letter-spacing:3px;font-weight:700;}
+    nav ul{display:flex;gap:20px;list-style:none;flex-wrap:wrap;}
+    nav a{color:var(--text);text-decoration:none;font-weight:600;padding:8px;border-radius:8px;}
+    nav a:hover{background:#f6f6f7;}
+    .actions{display:flex;gap:12px;align-items:center;}
+    .hero{position:relative;border-radius:18px;overflow:hidden;min-height:300px;margin-top:20px;display:flex;align-items:center;justify-content:center;}
+    .hero img{width:100%;height:100%;object-fit:cover;filter:contrast(.95) saturate(.9);}
+    .hero-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:36px;background:linear-gradient(180deg, rgba(0,0,0,0.06), rgba(0,0,0,0.35));}
+    .hero-text{color:#fff;text-align:center}
+    .hero-title{font-family:'Playfair Display',serif;font-size:42px;line-height:1;margin-top:8px;}
+    .container{max-width:var(--max-w);margin:36px auto;padding:0 12px;}
+    .contact-info{display:flex;flex-direction:column;gap:14px;font-size:16px;color:var(--text);}
+    .contact-info a{text-decoration:none;color:var(--accent);}
+    .social-links{display:flex;gap:12px;margin-top:12px;}
+    .social-links a{display:inline-block;padding:10px;background:#eee;border-radius:8px;text-decoration:none;color:var(--accent);}
+    footer{margin-top:40px;padding:28px 0;border-top:1px solid #f2f2f2;color:var(--sub);display:flex;justify-content:space-between;flex-wrap:wrap;}
+    @media(max-width:640px){nav ul{flex-direction:column;gap:10px;margin-top:12px}.hero-title{font-size:32px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="nav">
+        <div class="brand">KEN MADUEKE</div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html" style="background:var(--text);color:#fff;">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <img src="IMG-20250919-WA0000.jpg" alt="Fashion hero">
+      <div class="hero-overlay">
+        <div class="hero-text">
+          <div class="hero-title">Contact KEN MADUEKE</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="contact-info">
+        <p>Phone/WhatsApp: <a href="https://wa.me/2349054336149" target="_blank">+234 905 433 6149</a></p>
+        <p>Email: <a href="mailto:kenmadueke@example.com">kenmadueke@example.com</a></p>
+        <p>Follow us on social media:</p>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank">Facebook</a>
+          <a href="https://instagram.com" target="_blank">Instagram</a>
+          <a href="https://twitter.com" target="_blank">Twitter</a>
+          <a href="mailto:kenmadueke@example.com">Gmail</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div>© 2025 KEN MADUEKE — Premium Fashion</div>
+      <div>Privacy • Terms • Contact</div>
+    </footer>
+  </div>
+</body>
+</html>

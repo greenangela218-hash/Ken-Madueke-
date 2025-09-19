@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About Us – KEN MADUEKE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --max-w:1200px;
+      --bg:#fff;
+      --muted:#f6f6f7;
+      --text:#0b0b0b;
+      --sub:#6d6d6d;
+      --accent:#000;
+      --radius:12px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial;color:var(--text);background:var(--bg);}
+    .wrap{max-width:var(--max-w);margin:0 auto;padding:24px;}
+    header{position:sticky;top:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(6px);z-index:60;border-bottom:1px solid #eee}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0;flex-wrap:wrap}
+    .brand{font-family:'Playfair Display',serif;font-size:20px;letter-spacing:3px;font-weight:700}
+    nav ul{display:flex;gap:20px;list-style:none;flex-wrap:wrap}
+    nav a{color:var(--text);text-decoration:none;font-weight:600;padding:8px;border-radius:8px}
+    nav a:hover{background:var(--muted)}
+    .actions{display:flex;gap:12px;align-items:center}
+    .icon-btn{background:transparent;border:1px solid transparent;padding:8px;border-radius:8px;cursor:pointer;font-weight:600}
+    .hero{position:relative;border-radius:18px;overflow:hidden;min-height:420px;margin-top:20px}
+    .hero img{width:100%;height:100%;object-fit:cover;display:block;filter:contrast(.98) saturate(.9)}
+    .hero-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:36px;background:linear-gradient(180deg, rgba(0,0,0,0.06), rgba(0,0,0,0.35))}
+    .hero-text{color:#fff;text-align:center}
+    .hero-title{font-family:'Playfair Display',serif;font-size:46px;line-height:1;margin-top:8px}
+    .hero-sub{margin-top:12px;max-width:720px;color:rgba(255,255,255,0.92);margin-left:auto;margin-right:auto}
+    .container{max-width:var(--max-w);margin:36px auto;padding:0 12px}
+    .about-text{font-size:18px;line-height:1.7;color:var(--text)}
+    .about-text p{margin-bottom:20px}
+    footer{margin-top:40px;padding:28px 0;border-top:1px solid #f2f2f2;color:var(--sub);display:flex;justify-content:space-between;flex-wrap:wrap}
+    @media(max-width:980px){.hero-title{font-size:36px}.hero-sub{font-size:16px}}
+    @media(max-width:640px){nav ul{flex-direction:column;gap:10px;margin-top:12px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="nav">
+        <div class="brand">KEN MADUEKE</div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html" style="background:var(--text);color:#fff;">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="actions">
+          <button class="icon-btn">Cart</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <img src="IMG-20250919-WA0000.jpg" alt="Fashion hero">
+      <div class="hero-overlay">
+        <div class="hero-text">
+          <div class="hero-title">About KEN MADUEKE</div>
+          <div class="hero-sub">Luxury fashion that blends sophistication, modern craftsmanship, and timeless design. Discover our story and philosophy.</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="about-text">
+        <p><strong>KEN MADUEKE</strong> is a contemporary fashion house dedicated to redefining elegance through timeless design and modern craftsmanship.</p>
+        <p>Founded on the principles of <strong>quality, originality, and sophistication</strong>, our brand embodies the spirit of individuality while celebrating global style.</p>
+        <p>Each collection is thoughtfully curated, combining <strong>premium fabrics</strong>, meticulous attention to detail, and an uncompromising pursuit of excellence.</p>
+        <p>From everyday essentials to statement pieces, our designs are created for those who value <strong>confidence, authenticity, and refined taste</strong>.</p>
+        <p>At <strong>KEN MADUEKE</strong>, we believe fashion is more than clothing — it is a <strong>language of self-expression</strong>. Our mission is to inspire individuals to embrace their unique identity while experiencing the luxury of true craftsmanship.</p>
+        <p><strong>KEN MADUEKE — Where fashion becomes art.</strong></p>
+      </div>
+    </div>
+
+    <footer>
+      <div>© 2025 KEN MADUEKE — Premium Fashion</div>
+      <div>Privacy • Terms • Contact</div>
+    </footer>
+  </div>
+</body>
+</html>

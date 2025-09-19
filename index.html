@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ken Madueke — Fresh Collection</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+  <body>
+        <div class="wrap">
+          <!-- Header -->
+          <header>
+            <div class="nav">
+              <div style="display:flex;gap:2px;align-items:center">
+                <button class="icon-btn" id="menuToggle">☰ </button>
+                <div class="brand">KEN MADUEKE</div>
+              </div>
+              <nav>
+                <ul>
+                  <li><a href="#new" class="active">New</a></li>
+                  <li><a href="#collection">Collection</a></li>
+                  <li><a href="#lookbook">Lookbook</a></li>
+                  <li><a href="#stores">Stores</a></li>
+                </ul>
+              </nav>
+              <div class="actions">
+                <button class="icon-btn" id="searchBtn">Search</button>
+                <button class="icon-btn" id="signInBtn"></button>
+                <div class="cart">
+                  <button class="icon-btn" id="cartBtn">Cart</button>
+                  <span class="badge" id="cartCount">0</span>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <!-- Sidebar -->
+          <div id="sidebar" class="sidebar">
+            <span class="close-sidebar" id="closeSidebar">×</span>
+            <a href="#new" class="active">New</a>
+            <a href="#collection">Collection</a>
+            <a href="#lookbook">Lookbook</a>
+            <a href="#stores">Stores</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div id="overlayBg" class="overlay-bg"></div>
+
+          <!-- Main Content -->
+          <main>
+            <!-- Hero Section -->
+            <section class="hero" id="new">
+              <div class="hero-visual">
+                <img src="IMG-20250919-WA0000.jpg" alt="Ken Madueke">
+                <div class="hero-overlay">
+                  <div class="hero-text">
+                    <div class="eyebrow">Autumn / Winter</div>
+                    <div class="hero-title">Refined Lines<br>Italian Wool</div>
+                    <div class="hero-sub">A curated edit of tailored coats and essential knitwear. Clean silhouettes, premium textiles.</div>
+                    <a class="cta" id="shopNow">Shop collection</a>
+                  </div>
+                </div>
+              </div>
+
+              <aside class="hero-side">
+                <div class="feature">
+                  <img src="IMG-20250919-WA0002.jpg" alt="Featured" class="IMG">
+                  <div>
+                    <div style="color:var(--sub);font-size:13px">Featured</div>
+                    <div style="font-weight:700;margin-top:6px">The Milano Coat</div>
+                    <div class="price">$1,290</div>
+                    <div style="margin-top:10px"><button class="btn" data-id="1" onclick="openProduct(1)">View</button></div>
+                  </div>
+                </div>
+                <div class="feature" style="padding:14px">
+                  <div style="font-size:13px;color:var(--sub)">Free express shipping over $500</div>
+                </div>
+              </aside>
+            </section>
+
+            <!-- Collection -->
+            <h3 class="section-title" id="collection">Discover</h3>
+            <section>
+              <div class="grid" id="productGrid" aria-live="polite"></div>
+            </section>
+
+            <!-- Lookbook -->
+            <section id="lookbook" style="padding:64px 0;text-align:center;color:var(--sub)">
+              <h3 class="section-title">Lookbook / Editorial</h3>
+              <div class="grid">
+                <img src="IMG-20250919-WA0000.jpg" alt="Lookbook 1" class="IMG" height="100%" width="100%">
+                <img src="IMG-20250919-WA0002.jpg" alt="Lookbook 2" class="IMG" height="100%" width="100%">
+                <img src="lookbook3.jpg" alt="Lookbook 3" class="IMG">
+              </div>
+            </section>
+
+            <!-- <section id="lookbook" style="padding:64px 0;text-align:center;color:var(--sub)">
+              <h3 class="section-title">Videos</h3>
+              <div class="grid">
+                <video src="IMG-20250919-WA0000.jpg" alt="Lookbook 1" class="IMG" height="100%" width="100%">
+                <video src="IMG-20250919-WA0002.jpg" alt="Lookbook 2" class="IMG" height="100%" width="100%">
+                <video src="lookbook3.jpg" alt="Lookbook 3" class="IMG">
+              </div>
+            </section> -->
+
+            <!-- Stores -->
+            <section id="stores" style="padding:64px 0;text-align:center;color:var(--sub)">
+              <h3 class="section-title">Stores & Locations</h3>
+              <p>Visit us at:</p>
+              <ul style="list-style:none;padding:0;line-height:1.8">
+                <li>Nigeria: 123 Fashion Ave</li>
+              </ul>
+            </section>
+          </main>
+
+          <!-- Footer -->
+          <footer style="margin-top:40px;padding:28px 0;border-top:1px solid #f2f2f2;color:var(--sub);display:flex;justify-content:space-between;flex-wrap:wrap">
+            <div>© 2025 Ken Madueke — All rights reserved</div>
+            <div>Privacy • Terms • Contact</div>
+          </footer>
+        </div>
+
+        <!-- Product Modal -->
+        <div id="productOverlay" class="overlay" aria-hidden="true">
+          <div class="modal" role="dialog" aria-modal="true">
+            <button class="close-x" id="closeProduct">✕</button>
+            <div>
+              <img id="modalImg" src="" alt="Product image">
+            </div>
+            <aside class="modal-info">
+              <h3 id="modalTitle">Title</h3>
+              <div id="modalDesc" class="muted">Description</div>
+              <div style="margin-top:12px;font-weight:700" id="modalPrice">$0</div>
+              <div style="margin-top:14px">
+                <label for="qty">Qty</label>
+                <input id="qty" type="number" min="1" value="1" style="width:70px;padding:8px;border:1px solid #eee;border-radius:8px">
+              </div>
+              <div style="margin-top:18px">
+                <button class="btn" id="addToCartModal">Add to cart</button>
+              </div>
+            </aside>
+          </div>
+        </div>
+
+        <!-- Search Modal -->
+        <div id="searchOverlay" class="overlay" aria-hidden="true">
+          <div class="modal" style="width:560px;grid-template-columns:1fr" role="dialog" aria-modal="true">
+            <div style="padding:8px 6px">
+              <div style="display:flex;justify-content:space-between;align-items:center">
+                <strong>Search</strong>
+                <button class="close-x" id="closeSearch">✕</button>
+              </div>
+              <div style="margin-top:12px">
+                <input id="searchInput" placeholder="Search products, e.g. 'coat'" style="width:100%;padding:12px;border:1px solid #eee;border-radius:8px">
+                <div style="text-align:left;margin-top:10px"><button class="btn" id="doSearch">Search</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sign-in Modal -->
+        <div id="signinOverlay" class="overlay" aria-hidden="true">
+          <div class="modal" style="width:560px;grid-template-columns:1fr" role="dialog" aria-modal="true">
+            <div style="padding:8px 6px">
+              <div style="display:flex;justify-content:space-between;align-items:center">
+                <strong>Sign in</strong>
+                <button class="close-x" id="closeSignin">✕</button>
+              </div>
+              <div style="margin-top:12px;display:flex;flex-direction:column;gap:8px">
+                <input id="email" placeholder="email@example.com" style="padding:12px;border:1px solid #eee;border-radius:8px">
+                <input id="password" placeholder="password" type="password" style="padding:12px;border:1px solid #eee;border-radius:8px">
+                <div style="text-align:right;margin-top:6px"><button class="btn" id="doSignin">Sign in</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cart Drawer -->
+        <aside id="cartDrawer" class="cart-drawer" aria-hidden="true">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <strong>Shopping cart</strong>
+            <button class="btn" id="closeCart" style="background:transparent">Close</button>
+          </div>
+          <div class="cart-items" id="cartItems" style="margin-top:12px">Your cart is empty.</div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding-top:12px;border-top:1px solid #f4f4f4">
+            <div style="font-weight:700">Total</div>
+            <div id="cartTotal">$0</div>
+          </div>
+          <div style="margin-top:12px;text-align:right">
+            <!-- WhatsApp checkout button -->
+            <button class="btn" id="checkoutBtn">Pay via WhatsApp</button>
+          </div>
+        </aside>
+      </div>
+
+      <script src="script.js"></script>
+  </body>
+</html>

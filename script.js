@@ -65,16 +65,16 @@ let cart=[];
 let products=[
   {id:1,title:"Fitting dresses",desc:"Silk fit",price:290,img:"IMG-1 (1).jpg"},
   {id:2,title:"Lock Knit",desc:"Lock knitwear",price:180,img:"IMG-1 (2).jpg"},
-  {id:3,title:"Mirrow",desc:"Mirrow",price:240,img:"IMG-1 (3).jpg"},
-  {id:1,title:"Mirrow",desc:"Bead",price:240,img:"IMG-1 (4).jpg"},
-  {id:2,title:"Obele` dress",desc:"Slim fit",price:220,img:"IMG-1 (5).jpg"},
-  {id:3,title:"Obele` dress",desc:"Elegant slim fit",price:220,img:"IMG-1 (6).jpg"},
-  {id:1,title:"Pink night",desc:"Pink",price:290,img:"IMG-1 (7).jpg"},
-  {id:2,title:"Pink night",desc:"Night",price:290,img:"IMG-1 (8).jpg"},
-  {id:3,title:"Rosie`",desc:"Rose`",price:300,img:"IMG-1 (9).jpg"},
-  {id:1,title:"Rosie`",desc:"Bow",price:300,img:"IMG-1 (10).jpg"},
-  {id:2,title:"Rosie`",desc:"Pose bow`",price:300,img:"IMG-1 (11).jpg"},
-  {id:3,title:"Mirrow",desc:"Elegant fit",price:240,img:"IMG-1 (12).jpg"}
+  {id:3,title:"Mirrow",desc:"Mirrow bead",price:240,img:"IMG-1 (3).jpg"},
+  {id:4,title:"Mirrow",desc:"Mirrow bead",price:240,img:"IMG-1 (4).jpg"},
+  {id:5,title:"Obele` dress",desc:"Elegant Slim fit",price:220,img:"IMG-1 (5).jpg"},
+  {id:6,title:"Obele` dress",desc:"Elegant slim fit",price:220,img:"IMG-1 (6).jpg"},
+  {id:7,title:"Pink night",desc:"PinkNight",price:290,img:"IMG-1 (7).jpg"},
+  {id:8,title:"Pink night",desc:"PinkNight",price:290,img:"IMG-1 (8).jpg"},
+  {id:9,title:"Rosie`",desc:"Rose` bow",price:300,img:"IMG-1 (9).jpg"},
+  {id:10,title:"Rosie`",desc:"Rose` bow",price:300,img:"IMG-1 (10).jpg"},
+  {id:11,title:"The Madueke's Wear`",desc:"Madueke`s Pose`",price:300,img:"IMG-20250919-WA0002.jpg"},
+  {id:12,title:"Mirrow",desc:"Elegant slim fit",price:240,img:"IMG-1 (12).jpg"}
 ];
 const productGrid=document.getElementById("productGrid");
 function renderProducts(list){
